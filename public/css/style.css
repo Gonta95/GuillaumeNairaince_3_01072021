@@ -8,6 +8,116 @@
   font-family: 'Roboto', serif, sans-serif;
   max-width: 1920px; }
 
+.menu {
+  background-color: #f6f6f6;
+  border-radius: 50px 50px 0 0; }
+  .menu .head {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-top: 20px; }
+    .menu .head__title {
+      margin-left: 30px;
+      font-family: 'Shrikhand';
+      text-align: center;
+      font-size: 1.6rem; }
+    .menu .head i {
+      font-size: 1.5rem !important;
+      color: #929191;
+      font-size: 1.3rem; }
+  .menu .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0 65px 0; }
+    .menu .button__order {
+      color: #fff;
+      outline-style: none;
+      cursor: pointer;
+      width: 190px;
+      border-radius: 5rem;
+      padding: 0.85rem 1.5rem;
+      font-size: 1.1rem;
+      background: linear-gradient(360deg, #9356DC, #FF79DA);
+      box-shadow: 0px 5px 10px 0px #c6c6c6;
+      margin-bottom: 2rem;
+      border: none; }
+      .menu .button__order:hover {
+        transition: box-shadow 300ms ease,opacity 300ms ease;
+        box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.5);
+        opacity: .9; }
+  .menu .container {
+    padding: 10px; }
+  .menu .meal__title {
+    color: #4c4c4c;
+    border-bottom: 3px solid #99E2D0;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    max-width: 60px;
+    font-size: 1.4rem;
+    margin: 25px 0 0px 20px; }
+  .menu .meal__menu {
+    animation: yourAnimation 3s ease 0s normal none;
+    display: flex;
+    background-color: white;
+    height: 75px;
+    border-radius: 20px;
+    padding-left: 20px;
+    margin: 10px;
+    box-shadow: 0px 5px 10px 0px #c6c6c6;
+    cursor: pointer;
+    margin-top: 20px; }
+    .menu .meal__menu:hover > .meal__menu--checkbox {
+      animation: checkmark 500ms ease-in-out forwards; }
+    .menu .meal__menu:hover .checkmark {
+      transform: rotate(0deg); }
+    .menu .meal__menu * {
+      margin: 0%;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .menu .meal__menu--description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+      .menu .meal__menu--description .description {
+        font-weight: 700;
+        font-size: 1.1rem; }
+      .menu .meal__menu--description .description .chicken {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap; }
+      .menu .meal__menu--description .subtitle {
+        font-size: 1.14rem;
+        font-weight: 700; }
+    .menu .meal__menu--price {
+      font-weight: bold;
+      width: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding-bottom: 10px;
+      padding-right: 10px;
+      font-size: 0.9rem;
+      margin-left: 20px; }
+    .menu .meal__menu--checkbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      color: #fff;
+      background-color: #99E2D0;
+      border-radius: 0px 20px 20px 0px;
+      width: 0%; }
+      .menu .meal__menu--checkbox .checkmark {
+        font-size: 1.5rem;
+        transform: rotate(-360deg);
+        transition-duration: 0.8s; }
+
 .loading {
   position: fixed;
   display: flex;
