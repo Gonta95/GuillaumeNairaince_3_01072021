@@ -1,0 +1,129 @@
+@mixin google-font($font) {
+    @import url('https://fonts.googleapis.com/css2?family=#{$font}&display=swap');
+}
+
+@include google-font(Roboto);
+@include google-font(Shrikhand);
+
+@mixin heart {
+    color: #929191;
+    font-size: 1.3rem;
+}
+
+
+@mixin menu {
+   
+    &__title {
+        color: $color-meal;
+        border-bottom: 3px solid $color-tertiary;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        max-width: 60px;
+        font-size: 1.4rem;
+        margin: 25px 0 0px 20px;
+    }
+    
+    &__menu {
+        animation: yourAnimation 3s ease 0s normal none;
+        display: flex;
+        background-color: white;
+        height: 75px;
+        border-radius: 20px;
+        padding-left: 20px;
+        margin: 10px;
+        box-shadow: 0px 5px 10px 0px $box-color;
+        cursor: pointer;
+        margin-top: 20px;
+        
+        &:hover > .meal__menu--checkbox {
+             animation: checkmark 500ms ease-in-out forwards;
+        } 
+        
+        &:hover .checkmark {
+            transform: rotate(0deg);
+        } 
+
+        *{
+            margin: 0%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        
+        &--description {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            .description {
+                font-weight: 700;
+                font-size: 1.1rem;
+            }
+            .description .chicken {
+                width: 50%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .subtitle {
+                font-size: 1.14rem;
+                font-weight: 700;
+            }
+            
+        }
+        
+        &--price {
+            font-weight: bold;
+            width: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        &--checkbox {
+            @include center;
+            overflow: hidden;
+            color: #fff;
+            background-color: $color-tertiary;
+            border-radius: 0px 20px 20px 0px;
+            width: 0%;
+       
+            .checkmark{
+                font-size: 1.5rem;
+                transform: rotate(-360deg);
+                transition-duration: 0.8s;
+            
+            }
+      
+        }
+
+    }
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin button {
+    color: $color-white;
+    outline-style: none;
+    cursor: pointer;
+    width: 190px;
+    border-radius: 5rem;
+    padding: 0.85rem 1.5rem;
+    font-size: 1.1rem;
+    background: linear-gradient(360deg, $color-primary, $color-secondary);
+    box-shadow: 0px 5px 10px 0px $box-color;
+    margin-bottom: 2rem;
+    border: none;
+    &:hover {
+        transition: box-shadow 300ms ease,opacity 300ms ease;
+        box-shadow: 0 0 16px 0 rgba(119,119,119,.5);
+        opacity: .9;
+    }
+}

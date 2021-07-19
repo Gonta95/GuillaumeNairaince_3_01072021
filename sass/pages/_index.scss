@@ -1,0 +1,203 @@
+.loading{
+    position: fixed;
+    @include center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(30deg, $color-primary, $color-secondary);
+    animation: loading 2s;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+    z-index: 3;
+    
+     &__spinner{
+        position: absolute;
+        font-size: 8rem;
+        color: $color-white;
+        animation: spinner 3s ease 0s infinite normal none;
+    }
+}
+
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-clr;
+    font-weight: 500;
+    width: 100%;
+    box-shadow:  1px 3px 10px 1px #c6c6c6 inset;
+    &__text {
+        padding: 1.2rem;
+    }
+}
+
+.presentation {
+    
+    padding-top: 2rem;
+    background-color: $background-color;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+    &__title{
+        margin: 0;
+    }
+    &__text {
+        font-size: 1.2rem;
+        padding-top: 1rem;
+        color: #555;
+        padding-bottom: 1rem;
+    }
+    &__btn {
+         color: $color-white;
+         outline-style: none;
+         cursor: pointer;
+         display: inline-flex;
+         border-radius: 5rem;
+         padding: 0.85rem 1.5rem;
+         font-size: 1.1rem;
+         background: linear-gradient(360deg, $color-primary, $color-secondary);
+         box-shadow: 0px 5px 10px 0px $box-color;
+         margin-bottom: 2rem;
+         &:hover {
+            transition: box-shadow 300ms ease,opacity 300ms ease;
+            box-shadow: 0 0 16px 0 rgba(119,119,119,.5);
+            opacity: .9;
+        }
+       
+    }
+   
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.operation {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    
+    &__title {
+        margin-left: 1rem;
+        width: 100%;
+    }
+    &__content {
+        text-align: center;
+        position: relative;
+        width: 70%;
+        display: inline-flex;
+        align-items: center;
+        padding: 1.5rem 1.5rem 1.5rem 2.8rem;      ;
+        cursor: pointer;
+        box-shadow: 2px 6px 6px 0px rgba(50, 50, 50, 0.22);
+        background-color: $background-color;
+        border-radius: 1.5rem;
+        margin: 1rem;
+        position: relative;
+    }
+    
+    &__btn {
+        position: absolute;
+        background-color: #9356dc;
+        border: 0.5px solid #9356dc;
+        border-radius: 100%;
+        width: 1.3rem;
+        height: 1.3rem;
+        left: 0;
+        color: $color-white;
+        transform: translateX(-50%);
+        padding: 0.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    }
+    &__box {
+        display: flex;
+       
+        &__fa, .fas {
+            position: absolute;
+            left: 34px;
+            @include heart;
+        }
+        &--text {
+            margin-left: 35px;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        i.fa-store{
+            color: #9356DC;
+        }
+    }
+    .color {
+        background-color: #f5edff;
+    }
+       
+}
+
+#restaurantsPlats {
+    background-color: $color-menu;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 0.9rem 2.7rem 0.9rem;
+    margin-top: 2rem;
+    #title {
+        margin: 0;
+        padding-bottom: 10px;
+    }
+    .photo {
+        overflow: hidden;
+        height: 280px;
+        margin: 10px 0px;
+        position: relative;
+        border-radius: 25px;
+        box-shadow: 0px 5px 10px 0px $box-color;
+        .photo__index {
+            margin: 0;
+        }
+        .photo__index img {
+            width:  100%;
+            
+        }
+        .photo__name {
+            width: 100%;
+            font-size: 1.1em;
+            border-radius: 0 0 25px 25px;
+            position: absolute;
+            padding: 10px 15px 15px 15px;
+            background-color: $color-white;
+            bottom: 0px;
+            color: $color-text-photo;
+            
+            strong {
+                color: $color-black;
+                font-size: 1.2rem;
+                line-height: 2rem;
+            }
+            br .photo__name--street {
+                font-size: 0.8rem;
+                
+            }
+        }
+        i {
+            position: absolute;
+            left: 76%;
+            top: 35%;
+            font-size: 1.5rem;
+        }
+        
+        .new {
+            position: absolute;
+            right: 5%;
+            top: 7%;
+            background-color: #99e2d0;
+            color: #269e80;
+            padding: 0.312rem;
+            font-size: 0.9rem;
+            border-radius: 2px;
+        }
+       
+    }
+}

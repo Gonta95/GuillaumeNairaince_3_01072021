@@ -1,0 +1,13 @@
+.header {
+    @include center;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    
+    &__link {
+        position: absolute;
+        left: 20px;
+    }
+    &__logo {
+        font-size: 0.2em;
+    }
+}

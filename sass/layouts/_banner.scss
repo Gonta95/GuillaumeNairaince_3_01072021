@@ -1,0 +1,11 @@
+.banner__image{
+    margin-bottom: 250px;
+    &--photo{
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
