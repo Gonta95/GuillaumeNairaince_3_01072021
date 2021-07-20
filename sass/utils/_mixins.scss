@@ -14,17 +14,15 @@
 @mixin menu {
    
     &__title {
-        color: $color-meal;
-        border-bottom: 3px solid $color-tertiary;
-        padding-bottom: 10px;
-        text-transform: uppercase;
-        max-width: 60px;
-        font-size: 1.4rem;
-        margin: 25px 0 0px 20px;
+        @include title;
+        margin: 55px 0 0px 20px;
     }
-    
+    &__title--top {
+         margin: 20px 0 0 20px;    
+        @include title;
+    }
     &__menu {
-        animation: yourAnimation 3s ease 0s normal none;
+        animation: animationMenu 3s ease 0s normal none;
         display: flex;
         background-color: white;
         height: 75px;
@@ -125,6 +123,15 @@
     &:hover {
         transition: box-shadow 300ms ease,opacity 300ms ease;
         box-shadow: 0 0 16px 0 rgba(119,119,119,.5);
-        opacity: .9;
+        opacity: 0.9;
     }
+}
+
+@mixin title {
+    color: $color-meal;
+    border-bottom: 3px solid $color-tertiary;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    max-width: 60px;
+    font-size: 1.4rem;
 }
