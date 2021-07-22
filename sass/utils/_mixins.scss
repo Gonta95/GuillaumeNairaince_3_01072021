@@ -69,7 +69,6 @@
             text-overflow: ellipsis;
             white-space: nowrap;
         }
-
         
         &--description {
             display: flex;
@@ -79,7 +78,12 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-           
+           @media (min-width:1132px) and (max-width: 1300px) {
+               font-size:  0.9rem;
+           }
+           @media (min-width:1050px) and (max-width: 1131px) {
+            font-size:  0.8rem;
+        }
             
             .description {
                 font-weight: 700;
