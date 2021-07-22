@@ -425,13 +425,23 @@ a {
 .footer {
   background-color: #353535;
   color: #fff; }
+  @media (min-width: 650px) and (max-width: 910px) {
+    .footer {
+      text-align: center; } }
   .footer__title {
     font-family: 'Shrikhand', sans-serif;
     padding: 25px 0 15px 30px;
     font-size: 1.1rem; }
+    @media (min-width: 650px) and (max-width: 913px) {
+      .footer__title {
+        margin-right: 30px; } }
   .footer__list {
     padding: 0px 40px 30px 30px;
     line-height: 2rem; }
+    @media (min-width: 910px) {
+      .footer__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); } }
   .footer i {
     padding-right: 7px;
     font-size: 0.8rem; }
