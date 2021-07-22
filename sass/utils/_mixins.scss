@@ -12,14 +12,21 @@
 
 
 @mixin menu {
-   
+    
+    
     &__title {
         @include title;
         margin: 55px 0 0px 20px;
+        @media (min-width: 900px) {
+            margin: 20px;
+        }
     }
     &__title--top {
          margin: 20px 0 0 20px;    
         @include title;
+        @media (min-width: 900px) {
+            margin: 20px;
+        }
     }
     &__menu {
         animation: animationMenu 3s ease 0s normal none;
@@ -32,6 +39,21 @@
         box-shadow: 0px 5px 10px 0px $box-color;
         cursor: pointer;
         margin-top: 20px;
+        @media (min-width: 1345px) and (max-width: 1990px) {
+         width: 400px;
+        }
+        @media (min-width: 1260px) and (max-width: 1344px) {
+            width: 370px;
+        }
+        @media (min-width: 1190px) and (max-width: 1259px) {
+            width: 340px;
+        }
+        @media (min-width: 1125px) and (max-width: 1189px) {
+            width: 320px;
+        }
+        @media (min-width: 1051px) and (max-width: 1124px) {
+            width: 300px;
+        }
         
         &:hover > .meal__menu--checkbox {
              animation: checkmark 500ms ease-in-out forwards;
@@ -45,6 +67,7 @@
             margin: 0%;
             overflow: hidden;
             text-overflow: ellipsis;
+            white-space: nowrap;
         }
 
         
@@ -56,6 +79,8 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+           
+            
             .description {
                 font-weight: 700;
                 font-size: 1.1rem;
@@ -80,7 +105,7 @@
             padding-bottom: 10px;
             padding-right: 10px;
             font-size: 0.9rem;
-            margin-left: 20px
+            margin-left: 20px;
         }
         &--checkbox {
             @include center;
@@ -92,12 +117,13 @@
        
             .checkmark{
                 font-size: 1.5rem;
-                transform: rotate(-360deg);
+                transform: rotate(-320deg);
                 transition-duration: 0.8s;
             
             }
       
         }
+    
 
     }
 }
