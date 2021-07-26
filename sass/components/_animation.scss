@@ -2,10 +2,10 @@
     100% {
       opacity: 0;
       z-index: -3;
-         
-     }
+    }
    }
 
+  //  animation temps de chargement
 @keyframes spinner {
      0.0%{
          transform: scale(1) rotate(0);
@@ -18,6 +18,7 @@
      }
  }
  
+//  animation menu
  @keyframes animationMenu {
    0%{
        opacity: 0;
@@ -42,6 +43,7 @@
    }
  }
  
+// keyframes coeur
 @keyframes allofheart{
     0%{
         opacity: 0.4;
@@ -68,6 +70,7 @@
      }
  }
  .fa-heart:hover{
+  //  animation coeur
     animation: allofheart 1s ease-out forwards;
     background: $gradient-color !important;
     -webkit-background-clip: text !important;
