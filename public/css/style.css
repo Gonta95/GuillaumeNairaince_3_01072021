@@ -217,7 +217,7 @@
   height: 100%;
   background: linear-gradient(30deg, #9356DC, #FF79DA);
   animation: loading 1s;
-  animation-delay: 4s;
+  animation-delay: 3s;
   animation-fill-mode: both;
   z-index: 3; }
   .loading__spinner {
@@ -308,6 +308,11 @@ a {
     border-radius: 1.5rem;
     margin: 1rem auto;
     position: relative; }
+    .operation__content:hover {
+      background-color: white;
+      box-shadow: 5px 10px 10px 0px #c6c6c6; }
+      .operation__content:hover .fas {
+        color: #9356DC; }
   .operation__btn {
     position: absolute;
     background-color: #9356dc;
@@ -336,8 +341,6 @@ a {
       font-size: 1rem; }
     .operation__box i.fa-store {
       color: #9356DC; }
-  .operation .color {
-    background-color: #f5edff; }
 
 #restaurantsPlats {
   background-color: #f6f6f6;

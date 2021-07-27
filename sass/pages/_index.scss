@@ -5,7 +5,7 @@
     height: 100%;
     background: linear-gradient(30deg, $color-primary, $color-secondary);
     animation: loading 1s;
-    animation-delay: 4s;
+    animation-delay: 3s;
     animation-fill-mode: both;
     z-index: 3;
     
@@ -76,7 +76,7 @@ a {
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
-    
+   
     // media queries
     @media (min-width: 1241px) {
         display: grid;
@@ -114,6 +114,13 @@ a {
         border-radius: 1.5rem;
         margin: 1rem auto;
         position: relative;
+        &:hover {
+            background-color: lighten($color-primary, 60%);
+            box-shadow: 5px 10px 10px 0px #c6c6c6;  
+            .fas {
+                color: $color-primary;
+            }
+        }
     }
     &__btn {
         position: absolute;
@@ -133,7 +140,7 @@ a {
     }
     &__box {
         display: flex;
-       
+        
         &__fa, .fas {
             position: absolute;
             left: 34px;
@@ -147,9 +154,6 @@ a {
         i.fa-store{
             color: #9356DC;
         }
-    }
-    .color {
-        background-color: #f5edff;
     }
 }
 
