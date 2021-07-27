@@ -31,7 +31,6 @@
 }
 
 .presentation {
-    
     padding-top: 2rem;
     background-color: $background-color;
     text-align: center;
@@ -61,8 +60,8 @@
          &:hover {
             //  animation ombre bouton
             transition: box-shadow 300ms ease,opacity 300ms ease;
-            box-shadow: 0 0 16px 0 rgba(119,119,119,.5);
-            opacity: .9;
+            box-shadow: 0 0 16px 0 rgba(119,119,119,0.5);
+            opacity: 0.8;
         }
      }
 }
