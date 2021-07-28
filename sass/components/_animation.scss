@@ -1,41 +1,40 @@
-// changement d'état de page principal
+// changement d'état de page principal après l'animation
 @keyframes loading{
     100% {
       opacity: 0;
       z-index: -3;
     }
-   }
+}
 
-  //  animation temps de chargement
+//  animation tournoiement
 @keyframes spinner {
-     0.0%{
-         transform: scale(1) rotate(0);
-     }
-     100%{
+     0%{
          transform: scale(1) rotate(0);
      }
      50%{
-         transform: scale(2) rotate(360deg);
+      transform: scale(2) rotate(360deg);
+    }
+     100%{
+         transform: scale(1) rotate(0);
      }
- }
+}
  
 //  animation menu
- @keyframes animationMenu {
+@keyframes animationMenu {
    0%{
        opacity: 0;
        transform: translate(0, 20px);
     }
-   90% {
+    90% {
      opacity: 1;
-   }
+    }
    100%{
        transform: translate(0, 0);
        opacity: 1;
- 
    }
- }
+}
  
- @keyframes checkmark {
+@keyframes checkmark {
    0%{
      width: 0px;
    }

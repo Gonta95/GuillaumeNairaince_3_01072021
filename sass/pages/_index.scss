@@ -8,8 +8,7 @@
     animation-delay: 3s;
     animation-fill-mode: both;
     z-index: 3;
-    
-     &__spinner{
+    &__spinner{
         position: absolute;
         font-size: 8rem;
         color: $color-white;
@@ -18,13 +17,11 @@
 }
 
 .location {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include center;
     background-color: $background-clr;
     font-weight: 500;
     width: 100%;
-    box-shadow:  1px 3px 10px 1px #c6c6c6 inset;
+    box-shadow:  1px 3px 10px 1px $box-color inset;
     &__text {
         padding: 1.2rem;
     }
@@ -115,16 +112,13 @@ a {
         position: relative;
         &:hover {
             background-color: lighten($color-primary, 60%);
-            box-shadow: 5px 10px 10px 0px #c6c6c6;  
-            .fas {
-                color: $color-primary;
-            }
+            box-shadow: 5px 10px 10px 0px $box-color;  
         }
     }
     &__btn {
         position: absolute;
-        background-color: #9356dc;
-        border: 0.5px solid #9356dc;
+        background-color: $color-primary;
+        border: 0.5px solid $color-primary;
         border-radius: 100%;
         width: 1.3rem;
         height: 1.3rem;
@@ -132,9 +126,7 @@ a {
         color: $color-white;
         transform: translateX(-50%);
         padding: 0.8rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include center;
         font-weight: bold;
     }
     &__box {
@@ -151,7 +143,7 @@ a {
             font-size: 1rem;
         }
         i.fa-store{
-            color: #9356DC;
+            color: $color-primary;
         }
     }
 }
