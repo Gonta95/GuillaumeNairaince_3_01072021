@@ -33,7 +33,7 @@
     width: 0px; }
   100% {
     width: 100px; } }
-@keyframes allofheart {
+@keyframes animHeart {
   0% {
     opacity: 0.4; }
   30% {
@@ -52,7 +52,7 @@
     font-weight: 900;
     opacity: 1; } }
 .fa-heart:hover {
-  animation: allofheart 1s ease-out forwards;
+  animation: animHeart 1s ease-out forwards;
   background: linear-gradient(160deg, #FF79DA 2%, #9356DC) !important;
   -webkit-background-clip: text !important;
   color: transparent !important; }
