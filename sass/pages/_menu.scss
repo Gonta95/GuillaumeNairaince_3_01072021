@@ -23,8 +23,8 @@
         
     }
     .button {
-            @include center;
-            padding: 25px 0 55px 0;
+        @include center;
+        padding: 25px 0 55px 0;
         &__order {
           @include button;
         }
