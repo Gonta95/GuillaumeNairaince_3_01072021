@@ -111,8 +111,10 @@ a {
         margin: 1rem auto;
         position: relative;
         &:hover {
-            background-color: lighten($color-primary, 60%);
-            box-shadow: 5px 10px 10px 0px $box-color;  
+            background-color: lighten($color-primary, 30%);
+            .fas, fa {
+                color: $color-primary;
+            }
         }
     }
     &__btn {
@@ -141,9 +143,6 @@ a {
             margin-left: 35px;
             font-weight: 600;
             font-size: 1rem;
-        }
-        i.fa-store{
-            color: $color-primary;
         }
     }
 }

@@ -309,8 +309,9 @@ a {
     margin: 1rem auto;
     position: relative; }
     .operation__content:hover {
-      background-color: white;
-      box-shadow: 5px 10px 10px 0px #c6c6c6; }
+      background-color: #e4d5f6; }
+      .operation__content:hover .fas, .operation__content:hover fa {
+        color: #9356DC; }
   .operation__btn {
     position: absolute;
     background-color: #9356DC;
@@ -337,8 +338,6 @@ a {
       margin-left: 35px;
       font-weight: 600;
       font-size: 1rem; }
-    .operation__box i.fa-store {
-      color: #9356DC; }
 
 #restaurantsPlats {
   background-color: #f6f6f6;
